@@ -1,0 +1,3 @@
+::ng-deep .p-menuitem-link-active{
+    border: 4px solid #abc9fb !important;
+}
