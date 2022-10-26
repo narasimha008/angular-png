@@ -8,7 +8,13 @@ import { IvestDashboardComponent } from './ivest-dashboard/ivest-dashboard.compo
 import { IvestVehicleElectronicsComponent } from './ivest-vehicle-electronics/ivest-vehicle-electronics.component';
 import { IvestTruckdataComponent } from './ivest-truckdata/ivest-truckdata.component';
 import {PanelMenuModule} from 'primeng/panelmenu';
+import {InputTextModule} from 'primeng/inputtext';
 import { IvestTpmsWheelIdComponent } from './ivest-tpms-wheel-id/ivest-tpms-wheel-id.component';
+import { ReportTopComponent } from './report-top/report-top.component';
+import { ReportBottomComponent } from './report-bottom/report-bottom.component';
+import { FormsModule } from '@angular/forms';
+import { TableModule } from "primeng/table";
+import { ButtonModule } from "primeng/button";
 
 @NgModule({
   declarations: [
@@ -17,13 +23,19 @@ import { IvestTpmsWheelIdComponent } from './ivest-tpms-wheel-id/ivest-tpms-whee
     IvestDashboardComponent,
     IvestVehicleElectronicsComponent,
     IvestTruckdataComponent,
-    IvestTpmsWheelIdComponent
+    IvestTpmsWheelIdComponent,
+    ReportTopComponent,
+    ReportBottomComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
     AppRoutingModule,
-    PanelMenuModule
+    PanelMenuModule,
+    InputTextModule,
+    TableModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
